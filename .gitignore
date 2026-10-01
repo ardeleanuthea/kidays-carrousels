@@ -1,0 +1,7 @@
+# code source en clair et mot de passe : jamais sur GitHub (le site publié est chiffré)
+src/
+.passwords.local
+dev.html
+build.mjs
+.DS_Store
+test/
