@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Kidays · Carrousels</title>
+<title>Kidays Apps</title>
 <link rel="icon" href="assets/logo/logo-kidays-on-light.svg">
 <style>
 @font-face{font-family:'Poppins';font-weight:500;src:url('assets/fonts/Poppins-Medium.ttf') format('truetype')}
@@ -29,8 +29,8 @@ button:disabled{opacity:.6;cursor:wait}
 <body>
 <form class="login" id="f" autocomplete="on">
   <img src="assets/logo/logo-kidays-on-light.svg" alt="Kidays">
-  <h1>Carrousels Kidays</h1>
-  <p class="s">Espace réservé à l’équipe Kidays</p>
+  <h1>Kidays Apps</h1>
+  <p class="s">Carrousels et propositions B2B · équipe Kidays</p>
   <label for="u">Identifiant</label>
   <select id="u" name="username"><option value="equipe">Équipe Kidays</option></select>
   <label for="p">Mot de passe</label>
@@ -53,7 +53,7 @@ button:disabled{opacity:.6;cursor:wait}
     const plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv: ub(b.iv) }, k, ub(b.data));
     const app = JSON.parse(new TextDecoder().decode(plain));
     window.KAPP = { role, logout() { localStorage.removeItem(KEY); sessionStorage.removeItem(KEY); location.reload(); } };
-    document.title = "Kidays · Carrousels";
+    document.title = "Kidays Apps";
     document.head.querySelectorAll("style").forEach((s) => s.remove());
     const fonts = document.createElement("link"); fonts.rel = "preload"; fonts.as = "font"; fonts.href = "assets/fonts/Poppins-ExtraBold.ttf"; fonts.crossOrigin = "anonymous"; document.head.appendChild(fonts);
     app.css.forEach((c, i) => { const st = document.createElement("style"); st.id = "kc-css-" + i; st.textContent = c; document.head.appendChild(st); });
